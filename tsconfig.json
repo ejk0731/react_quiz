@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@common/*": ["src/common/*"],
+      // "@design/*": [
+      //   "src/design/*"
+      // ],
+      // "@helpers/*": [
+      //   "src/helpers/*"
+      // ],
+      "@modules/*": ["src/modules/*"],
+      // "@states/*": [
+      //   "src/states/*"
+      // ],
+      // "@utils/*": [
+      //   "src/utils/*"
+      // ],
+      "@styles/*": ["styles/*"]
+      // "@testUtils/*": [
+      //   "__tests__/testUtils/*"
+      // ],
+      // "@mocks/*": [
+      //   "__mocks__/*"
+      // ],
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
