@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from "./Book.module.scss";
 import { useEffect, useState } from "react";
 import { Button, InputGroup, Form } from "react-bootstrap";
+import Layout from "../common/Layout";
 
 const cx = classNames.bind(styles);
 
@@ -24,11 +25,11 @@ function Book() {
     getBooks();
   }, [input]);
   return (
-    <>
+    <Layout>
       {isLoading ? (
         <h3>...Loading</h3>
       ) : (
-        <div className={cx("wrap")}>
+        <div className={cx("book_wrap")}>
           <h2 className={cx("title")}>
             원하는 작가의 책과 대표작을 찾아봅시다
           </h2>
@@ -70,7 +71,7 @@ function Book() {
           </ul>
         </div>
       )}
-    </>
+    </Layout>
   );
 }
 export default Book;

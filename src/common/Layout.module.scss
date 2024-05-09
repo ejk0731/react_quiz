@@ -1,0 +1,18 @@
+.wrap {
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+}
+
+.content {
+  min-height: calc(100vh - 100px);
+  margin-top: 56px;
+}
+
+.footer-wrap {
+  margin-top: 700px;
+  height: 150px;
+}
