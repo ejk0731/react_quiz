@@ -5,6 +5,14 @@
 .header {
   position: fixed;
   top: 0;
+
+  a {
+    color: white;
+    
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+  }
 }
 
 .content {

@@ -1,5 +1,15 @@
 .canvas_box {
   margin-top: 800px;
+  
+}
+.progress_bar {
+  width: 10%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-color: pink;
 }
 
 .box {

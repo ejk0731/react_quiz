@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import styles from "./Layout.module.scss";
 const cx = classNames.bind(styles);
@@ -13,10 +14,10 @@ function Layout({ children }: LayoutProps) {
       <header id="header"  className={cx("header")}>
         <Navbar fixed="top" bg="dark" data-bs-theme="dark">
           <Container>
-            <Navbar.Brand href="/">React Quiz</Navbar.Brand>
+            <Link to="/">React Quiz</Link>
             <Nav as="ul" variant="pills" className="justify-content-center">
-              <Nav.Link href="/Books">Books</Nav.Link>
-              <Nav.Link href="/Canvas">Canvas</Nav.Link>
+              <Link to="/Books">Books</Link>
+              <Link to="/Canvas">Canvas</Link>
             </Nav>
           </Container>
         </Navbar>
